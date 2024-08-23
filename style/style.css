@@ -1,0 +1,37 @@
+@charset "UTF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    height: 180px;
+    background-color: white;
+    margin-bottom: 80px;
+}
+#logo_zoo {
+    margin-left: 20px;
+}
+.menu {
+    display: flex;
+    flex-flow: wrap;
+    height: 50px;
+    justify-content: flex-end;
+    margin-top: 15px;
+    flex: 1;
+}
+.menu a {
+    color: black;
+    text-decoration: none;
+    background-color: #215732;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+footer {
+    padding: 20px;
+    text-align: center;
+}
