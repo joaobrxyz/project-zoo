@@ -1,0 +1,17 @@
+@charset "UTF-8";
+#div_address {
+    width: 80%;
+    display: flex;
+}
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 35px;
+    font-family: sans-serif;
+}
+h2, p, address {
+    margin-bottom: 10px;
+}
+#mapa {
+    margin-left: 100px;
+}

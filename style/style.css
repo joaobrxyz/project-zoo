@@ -5,6 +5,11 @@
     padding: 0px;
     box-sizing: border-box;
 }
+html, body {
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+}
 header {
     display: flex;
     height: 100px;
@@ -85,6 +90,7 @@ footer {
     padding: 20px;
     align-items: flex-end;
     border-top: solid 1px rgba(0, 0, 0, 0.153);
+    margin-top: auto;
 }
 #logo-prefeitura, #logo-prefeitura img {
     cursor: pointer;
