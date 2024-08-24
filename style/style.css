@@ -20,6 +20,8 @@ header {
     justify-content: flex-end;
     margin-top: 15px;
     flex: 1;
+    gap: 20px;
+    margin-right: 20px;
 }
 .menu a {
     color: black;
@@ -28,7 +30,7 @@ header {
     color: white;
     border-radius: 5px;
     padding: 10px;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
     font-size: 20px;
 }
 footer {
