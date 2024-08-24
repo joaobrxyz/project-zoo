@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url(https://db.onlinewebfonts.com/c/0a2a0349b0195f6cfeedb17b08212ddc?family=GT+Classic+Beta+v3.2+Light);
 * {
     margin: 0px;
     padding: 0px;
@@ -6,12 +7,16 @@
 }
 header {
     display: flex;
-    height: 180px;
+    height: 100px;
     background-color: white;
-    margin-bottom: 80px;
+    margin: 0px 0px 40px 20px;
 }
 #logo_zoo {
     margin-left: 20px;
+    cursor: pointer;
+}
+#logo_zoo img {
+    width: 400px;
 }
 .menu {
     display: flex;
@@ -28,12 +33,59 @@ header {
     text-decoration: none;
     background-color: #215732;
     color: white;
-    border-radius: 5px;
+    border-radius: 10px;
     padding: 10px;
     /*margin-right: 10px;*/
     font-size: 20px;
 }
+main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+#main_pictures {
+    width: 100%;
+    height: auto;
+}
+.main_imagem {
+    width: 100%;
+    height: auto;
+}
+#main_text {
+    display: flex;
+    flex-flow: column;
+    width: 90%;
+    text-align: center;
+    color: #215732;
+    padding: 10px;
+    margin-top: 60px;
+    font-family: "GT Classic Beta v3.2 Light";
+    font-size: 26px;
+    text-align: justify;
+}
+#main_info {
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: black;
+    font-size: 20px;
+}
+.videos {
+    width: 90%;
+    height: auto;
+}
+.video {
+    width: 90%;
+    margin: auto;
+}
 footer {
     padding: 20px;
     text-align: center;
+}
+#logo-prefeitura {
+    cursor: pointer;
+}
+footer img {
+    width: 300px;
+    height: auto;
 }
