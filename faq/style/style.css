@@ -13,10 +13,12 @@ h1 {
 .faq-question {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid rgba(0, 0, 0, 0.112);
-    padding: 15px;
+    border-top: 1px solid rgba(0, 0, 0, 0.237);
+    padding: 10px;
     font-weight: bold;
     font-size: 1.3em;
+    cursor: pointer;
+    margin-top: 8px;
 }
 .faq-question div {
     cursor: pointer;
