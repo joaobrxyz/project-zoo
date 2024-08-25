@@ -29,3 +29,6 @@ h1 {
 .more {
     display: none;
 }
+.less {
+    display: block;
+}
