@@ -5,9 +5,15 @@
 .especie div {
     margin-right: 20px;
     margin: 20px;
-    padding: 5px;
+    padding: 6px;
     border: 1px solid rgba(0, 0, 0, 0.522);
     cursor: pointer;
+    border-radius: 5px;
+}
+.especie div:hover {
+    transition: 0.4s;
+    background-color: black;
+    color: #F1D669;
 }
 .animais {
     display: flex;
@@ -47,4 +53,11 @@
 }
 .especie_animal {
     font-size: .8em;
+}
+.selecionado {
+    background-color: black;
+    color: #F1D669;
+}
+.aves {
+    display: none;
 }
