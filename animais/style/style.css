@@ -60,7 +60,12 @@
 }
 .aves {
     display: none;
+    transition: 0.5s;
 }
 .repteis {
     display: none;
+    transition: 0.5s;
+}
+.mamiferos {
+    transition: 0.5s;
 }
