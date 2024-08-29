@@ -50,12 +50,47 @@ main {
     align-items: center;
 }
 #main_pictures {
-    width: 100%;
-    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 .main_imagem {
     width: 100%;
     height: auto;
+}
+.prev, .next {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    color: white;
+    padding: 10px;
+    font-size: 2.5em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    user-select: none;
+}
+.prev {
+    left: 10px;
+}
+.next {
+    right: 10px;
+}
+.indicators {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.indicator {
+    width: 10px;
+    height: 10px;
+    background-color: lightgray;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.indicator.active {
+    background-color: gray;
 }
 #main_text {
     display: flex;
