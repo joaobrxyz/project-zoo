@@ -58,39 +58,47 @@ main {
 .main_imagem {
     width: 100%;
     height: auto;
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out;
 }
 .prev, .next {
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.038);
     border: none;
     color: white;
-    padding: 10px;
+    padding: 20px;
     font-size: 2.5em;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     user-select: none;
 }
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.238);
+}
 .prev {
-    left: 10px;
+    left: 0px;
 }
 .next {
-    right: 10px;
+    right: 0px;
 }
-.indicators {
+.indicadores {
     display: flex;
     justify-content: center;
-    gap: 5px;
+    gap: 7px;
+    transform: translateY(-120%);
+    background-color: rgba(0, 0, 0, 0.095);
 }
-.indicator {
+.indicador {
     width: 10px;
     height: 10px;
-    background-color: lightgray;
+    background-color: rgb(188, 187, 187);
     border-radius: 50%;
     cursor: pointer;
 }
-.indicator.active {
-    background-color: gray;
+.indicador_ativo {
+    background-color: rgb(255, 255, 255) !important;
 }
 #main_text {
     display: flex;
