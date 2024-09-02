@@ -6,12 +6,15 @@
     <title>Perguntas frequentes</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="../style/mediaquery.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <header>
         <div id="logo_zoo">
             <a href="../index.html"><img src="../imagens/logo-zoo.svg" alt="logo do zoo"></a>
         </div>
+        <button id="menu_hamburguer"><span class="material-symbols-outlined">menu</span></button>
         <nav class="menu">
             <a href="../animais/">Animais</a>
             <a href="../como-chegar/">Como chegar</a>
@@ -138,5 +141,16 @@
         </div>
     </footer>
     <script src="script/script.js"></script>
+    <script>
+        const menu_hamburguer = document.querySelector("#menu_hamburguer")
+        const menu = document.querySelector(".menu")
+        menu_hamburguer.addEventListener("click",()=>{
+        if (menu.style.display == 'none' || menu.style.display == '') {
+            menu.style.display = "block"
+        } else {
+            menu.style.display = "none"
+        } 
+        })
+    </script>
 </body>
 </html>

@@ -62,5 +62,16 @@
         </div>
     </footer>
     <script src="script/script.js"></script>
+    <script>
+        const menu_hamburguer = document.querySelector("#menu_hamburguer")
+        const menu = document.querySelector(".menu")
+        menu_hamburguer.addEventListener("click",()=>{
+        if (menu.style.display == 'none' || menu.style.display == '') {
+            menu.style.display = "block"
+        } else {
+            menu.style.display = "none"
+        } 
+        })
+    </script>
 </body>
 </html>

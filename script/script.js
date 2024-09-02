@@ -45,14 +45,3 @@ btn_next.addEventListener("click",()=>{
     mudarTemp(10000)
 })
 let img_temp = setInterval(next, 4000)
-
-// Menu mobile
-const menu_hamburguer = document.querySelector("#menu_hamburguer")
-const menu = document.querySelector(".menu")
-menu_hamburguer.addEventListener("click",()=>{
-    if (menu.style.display == 'none' || menu.style.display == '') {
-        menu.style.display = "block"
-    } else {
-        menu.style.display = "none"
-    } 
-})
