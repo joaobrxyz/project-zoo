@@ -1,0 +1,39 @@
+@media screen and (orientation: portrait) {
+    header {
+        flex-flow: column;
+        height: auto;
+        margin-bottom: 5px;
+    }
+    #logo_zoo {
+        margin: auto;
+    }
+    .menu {
+        display: none;
+        margin: 0px;
+        padding: 0px;
+        background-color: rgba(198, 195, 195, 0.43);
+    }
+    .menu a {
+        display: block;
+        border: 1px solid white;
+        background-color: rgba(0, 0, 0, 0);
+        color: black;
+        gap: 0px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 0px;
+    }
+    .menu a:hover {
+        background-color: rgba(129, 127, 127, 0.919);
+        color: white;
+        text-decoration: underline;
+    }
+    #menu_hamburguer {
+        display: block;
+        height: 50px;
+        border: none;
+        background-color: #0D0F0E;
+        color: #F1F1F1;
+        cursor: pointer;
+    }
+}

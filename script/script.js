@@ -1,9 +1,9 @@
 const btn_prev = document.querySelector(".prev")
 const btn_next = document.querySelector(".next")
 const imagens = [
-    '../imagens/oncapintada.jpg',
-    '../imagens/arara.jpg',
-    '../imagens/jacare.jpg'
+    document.querySelector("#oncapintada"),
+    document.querySelector("#arara"),
+    document.querySelector("#jacare")
 ]
 const img = document.querySelector(".main_imagem")
 const indicadores = [...document.querySelectorAll('.indicador')]
@@ -15,14 +15,16 @@ function attIndicador(){
     indicadores[atual_index].classList.add('indicador_ativo')
 }
 function mostrarImg(index){
-        img.src = imagens[index]
-        attIndicador()
+    imagens.map((img)=>{
+        img.style.display = 'none'
+    })
+    imagens[index].style.display = 'block'
+    attIndicador()
 }
 indicadores.map((el)=>{
     el.addEventListener("click",(evt)=>{
         atual_index = parseInt(evt.target.id)
-        mostrarImg(evt.target.id)
-        
+        mostrarImg(evt.target.id)  
     })
 })
 btn_prev.addEventListener("click", ()=>{
@@ -43,3 +45,14 @@ btn_next.addEventListener("click",()=>{
     mudarTemp(10000)
 })
 let img_temp = setInterval(next, 4000)
+
+// Menu mobile
+const menu_hamburguer = document.querySelector("#menu_hamburguer")
+const menu = document.querySelector(".menu")
+menu_hamburguer.addEventListener("click",()=>{
+    if (menu.style.display == 'none' || menu.style.display == '') {
+        menu.style.display = "block"
+    } else {
+        menu.style.display = "none"
+    } 
+})
