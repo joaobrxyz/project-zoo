@@ -22,7 +22,7 @@
         </nav>
     </header>
     <main>
-        <h1>Perguntas frequentes</h1>
+        <h1 id="title_faq">Perguntas frequentes</h1>
         <section id="faq">
             <div class="faq-question">
                 <p>Qual o horário de visitação do Zoológico de Guarulhos?</p>
@@ -150,6 +150,9 @@
         } else {
             menu.style.display = "none"
         } 
+        })
+        window.addEventListener('resize',()=>{
+            menu.style.display = ''
         })
     </script>
 </body>
