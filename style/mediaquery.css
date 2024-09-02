@@ -41,4 +41,23 @@
         padding: 0px;
         width: 100%;
     }
+    #title_comochegar {
+        margin-top: 20px;
+    }
+    #div_address {
+        width: 100%;
+        flex-flow: column;
+    }
+    #div_mapa {
+        margin: 0px;
+        width: 100%;
+    }
+    #mapa {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    #address_text {
+        margin-left: 20px;
+        margin-bottom: 15px;
+    }
 }

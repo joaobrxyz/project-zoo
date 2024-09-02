@@ -22,9 +22,9 @@
         </nav>
     </header>
     <main>
-        <h1>COMO CHEGAR</h1>
+        <h1 id="title_comochegar">COMO CHEGAR</h1>
         <section id="div_address">
-            <div id="text">
+            <div id="address_text">
                 <h2>Endereço</h2>
                 <address>Rua Dona Gloria Pagnoncelli,344 - Jardim Rosa de França - Guarulhos - SP</address>
                 <h2>Horário de Funcionamento</h2>
@@ -32,8 +32,8 @@
                 <h2>Fechamento dos Portões</h2>
                 <p>Às 16:30</p>
             </div>
-            <div id="mapa">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.492085370991!2d-46.55493272489471!3d-23.44270807888152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef4ffea13bf09%3A0xb8d85899781b01d4!2sZool%C3%B3gico%20Municipal%20de%20Guarulhos!5e0!3m2!1spt-BR!2sbr!4v1724533026885!5m2!1spt-BR!2sbr" width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="div_mapa">
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.492085370991!2d-46.55493272489471!3d-23.44270807888152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef4ffea13bf09%3A0xb8d85899781b01d4!2sZool%C3%B3gico%20Municipal%20de%20Guarulhos!5e0!3m2!1spt-BR!2sbr!4v1724533026885!5m2!1spt-BR!2sbr" width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
@@ -60,6 +60,9 @@
         } else {
             menu.style.display = "none"
         } 
+        })
+        window.addEventListener('resize',()=>{
+            menu.style.display = ''
         })
     </script>
 </body>
