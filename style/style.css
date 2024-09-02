@@ -95,7 +95,7 @@ main {
     justify-content: center;
     gap: 7px;
     transform: translateY(-120%);
-    background-color: rgba(0, 0, 0, 0.095);
+    background-color: rgba(0, 0, 0, 0.037);
 }
 .indicador {
     width: 10px;
@@ -113,7 +113,6 @@ main {
     max-width: 1347px;
     text-align: center;
     color: #215732;
-    padding: 10px;
     margin-top: 60px;
     font-family: "GT Classic Beta v3.2 Light";
     font-size: 26px;
@@ -125,14 +124,22 @@ main {
     margin-bottom: 30px;
     color: black;
     font-size: 20px;
+    padding: 10px;
 }
-.videos {
-    width: 90%;
+#text {
+    max-width: 1200px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#div_video {
+    max-width: 1347px;
+    width: 1347px;
     height: auto;
 }
 .video {
-    width: 90%;
+    width: 100%;
     margin: auto;
+    margin-bottom: 10px;
 }
 footer {
     display: flex;

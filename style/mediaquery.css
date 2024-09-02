@@ -36,4 +36,9 @@
         color: #F1F1F1;
         cursor: pointer;
     }
+    .video {
+        margin-top: 20px;
+        padding: 0px;
+        width: 100%;
+    }
 }
