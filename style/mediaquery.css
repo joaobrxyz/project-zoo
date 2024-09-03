@@ -60,4 +60,12 @@
         margin-left: 20px;
         margin-bottom: 15px;
     }
+    .animal {
+        width: 128px;
+        height: 190px;
+    }
+    .img_animal img {
+        width: 128px;
+        height: 120px;
+    }
 }

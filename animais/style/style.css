@@ -29,7 +29,8 @@
 .animal {
     display: flex;
     flex-flow: column;
-    margin-left: 20px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 5px;
     margin-bottom: 5px;
     width: 160px;

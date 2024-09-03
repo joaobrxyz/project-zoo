@@ -342,15 +342,6 @@
             </div>
             <div class="animal mamiferos">
                 <div class="img_animal">
-                    <img src="imagens/mamiferos/ouriço_cacheiro.jpg" alt="Ouriço cacheiro">
-                </div>
-                <div class="txt_animal">
-                    <p class="nome_animal">Ouriço cacheiro</p>
-                    <p class="especie_animal">erinaceus europaeus</p>
-                </div>
-            </div>
-            <div class="animal mamiferos">
-                <div class="img_animal">
                     <img src="imagens/mamiferos/queixada.jpg" alt="Queixada">
                 </div>
                 <div class="txt_animal">
@@ -492,6 +483,9 @@
         } else {
             menu.style.display = "none"
         } 
+        })
+        window.addEventListener('resize',()=>{
+            menu.style.display = ''
         })
     </script>
 </body>
