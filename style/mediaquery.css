@@ -68,4 +68,8 @@
         width: 128px;
         height: 120px;
     }
+    .img_animal img:hover {
+        width: 130px;
+        height: 125px;
+    }
 }
