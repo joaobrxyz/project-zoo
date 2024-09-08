@@ -15,8 +15,6 @@ function attIndicador(){
     indicadores[atual_index].classList.add('indicador_ativo')
 }
 function mostrarImg(index){
-    imagens[1].src = "../imagens/arara.jpg"
-    imagens[2].src = "../imagens/jacare.jpg"
     imagens.map((img)=>{
         img.style.display = 'none'
     })
